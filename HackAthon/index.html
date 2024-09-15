@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Beyond Sunlight project - discover chemiosynthesis and its potential for extraterrestrial life.">
+    <title>Beyond Sunlight</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #002d72, #005b96); /* Gradient background for body */
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent header background */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            max-width: 250px;
+            animation: logoAnimation 3s ease-in-out infinite;
+        }
+
+        @keyframes logoAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: #ffcc00;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            color: #fff;
+            background: url('assets/hero-background.jpg') no-repeat center center;
+            background-size: cover;
+            filter: brightness(50%) blur(2px); /* Darken and blur background */
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0;
+            animation: fadeInUp 3s ease-out;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-top: 15px;
+            animation: fadeInUp 3s ease-out 1s;
+            max-width: 600px;
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 25px;
+            font-size: 20px;
+            color: #fff;
+            background: #ffcc00;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #ffb700;
+            transform: translateY(-5px);
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3); /* Semi-transparent section background */
+        }
+
+        .section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: fadeInUp 3s ease-out;
+        }
+
+        .section p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 3s ease-out 1s;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
+            color: #000;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* Dark footer background */
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            box-shadow: inset 0 -10px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="_11be388c-e8be-46eb-9c8d-5de0466a2f05.jpeg" alt="Beyond Sunlight Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/explore.html">Explore</a></li>
+                <li><a href="pages/info_hub.html">Info Hub</a></li>
+                <li><a href="pages/simulations.html">Simulations</a></li>
+                <li><a href="pages/quizzes.html">Quizzes</a></li>
+                <li><a href="pages/team.html">Team</a></li>
+                <li><a href="auth/login.html">Login</a></li>
+                <li><a href="auth/signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Beyond Sunlight</h1>
+        <p>Explore the possibilities of life on other worlds through chemiosynthesis.</p>
+        <a href="pages/explore.html" class="cta-button">Discover More</a>
+    </section>
+    <section class="section">
+        <h2>Discover Our Project</h2>
+        <p>Join us on an exciting journey to explore the potential of chemiosynthesis as a source of life in the universe. Our project combines interactive simulations, detailed information, and educational quizzes to offer a comprehensive experience.</p>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <img src="_a1275ece-731a-4e65-955c-8b80f77b84d9.jpeg" alt="Chemiosynthesis">
+            <h3>Chemiosynthesis Explained</h3>
+            <p>Understand the science behind chemiosynthesis and how it could support life on distant planets.</p>
+        </div>
+        <div class="feature">
+            <img src="_e420d246-6140-4753-b5a3-5ad97a893223.jpeg" alt="Interactive Simulations">
+            <h3>Interactive Simulations</h3>
+            <p>Engage with dynamic simulations to see chemiosynthesis in action within different extraterrestrial environments.</p>
+        </div>
+        <div class="feature">
+            <img src="_d8469726-9c84-4ab3-9b46-223ceb673439.jpeg" alt="Educational Quizzes">
+            <h3>Educational Quizzes</h3>
+            <p>Challenge your knowledge and learn more about extraterrestrial life through our engaging quizzes.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Beyond Sunlight Project | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
